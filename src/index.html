@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Timestamp Microservice</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Timestamp API</h1>
+
+    <p>Gets the UNIX timestamp and natural language date for a specified date.</p>
+    <p>The date can be specified as a UNIX timestamp or a natural language date string.</p>
+    <p>Response properties will be null if the specified date is invalid.</p>
+
+    <h2>URL</h2>
+    <span class="url">GET https://twisty-hour.glitch.me/&lt;date&gt;</span>
+
+    <h2>Example usage:</h2>
+    <div class="codeblock">
+      <p><span class="url">https://twisty-hour.glitch.me/December%2015,%202015</span></p>
+      <p><span class="url">https://twisty-hour.glitch.me/1450137600</span></p>
+    </div>
+
+    <h2>Example response:</h2>
+    <div class="codeblock">
+      <p>{</p>
+        <p><span class="property">"natural"</span>: <span class="value">"December 15, 2015"</span></p>
+        <p><span class="property">"unix"</span>: <span class="value">1450137600</span>,</p>
+      <p>}</p>
+    </div>
+  </body>
+</html>
